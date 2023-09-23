@@ -1,0 +1,131 @@
+/* Style the <nav> element */
+nav {
+    display: flex; /* Use flexbox to align content */
+    justify-content: space-between; /* Space out the elements horizontally */
+    align-items: center; /* Center-align items vertically */
+    padding:0 10%; /* Add some padding for spacing */
+    height: 10vh; /* Set the height of the navigation bar */
+  }
+  
+  /* Style the <ul> list within the navigation */
+  ul.list--container {
+    list-style-type: none; /* Remove list bullets */
+    padding: 0; /* Remove default padding */
+    display: flex; /* Make the list items display in a row */
+  }
+  
+  /* Style the button */
+  button.btn--resume {
+    color: black; /* Button text color */
+    border: none; /* Remove button border */
+    padding: 10px 20px; /* Add padding to the button */
+    cursor: pointer; /* Show pointer cursor on hover */
+    font-weight: bold; /* Make the text bold */
+    border: 2px solid black;
+    background-color: transparent;
+  }
+  
+  /* Align the button within the nav */
+  button.btn--resume {
+    align-self: center;
+  }
+  
+  ul.list--container {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+  }
+  
+  /* Style the <li> elements in the list */
+  ul.list--container li {
+    margin: 0 10px;
+    color:black;
+    position: relative; /* Add relative positioning for the underline */
+    cursor: pointer; /* Show pointer cursor on hover */
+    transition: text-decoration 0.3s ease; /* Add a smooth transition for the text-decoration property */
+  }
+  
+  /* Style the underline effect */
+  ul.list--container li::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -3px; /* Adjust the distance between text and underline */
+    height: 2px; /* Set the height of the underline */
+    background-color:black; /* Color of the underline */
+    transform: scaleX(0); /* Initial state, scale the underline to 0 width */
+    transform-origin: center; /* Center the transformation origin */
+    transition: transform 0.3s ease; /* Add animation effect to the underline */
+  }
+  
+  /* Apply the underline effect on hover */
+  ul.list--container li:hover::after {
+    transform: scaleX(1); /* Expand the underline to full width on hover */
+  }
+
+  .hamburger{
+    display: none;
+  }
+
+  .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #101010;
+}
+
+  @media screen and (max-width:768px){
+    nav.active{
+      display: flex;
+      position: fixed;
+      left: 0rem;
+      top: 0rem;
+      flex-direction: column;
+      background-color: #fff;
+      width: 100%;
+      text-align: center;
+      border-radius: 10px;
+      text-align: center;
+      transition: 0.3s;
+      box-shadow:0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+
+    nav{
+      display: none;
+    }
+
+    ul.list--container {
+      display: none;
+      list-style-type: none; /* Remove list bullets */
+      padding: 0; /* Remove default padding */
+      display: flex; /* Make the list items display in a row */
+      flex-direction: column;
+      gap:10%;
+      margin: 2.5rem 0;
+    }
+
+    .hamburger {
+      display: block;
+      position: fixed;
+      left:20rem;
+      top: 1rem;
+      cursor: pointer;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+      opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+    }
+
+  }

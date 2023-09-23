@@ -1,0 +1,72 @@
+.about--section {
+    display: flex; /* Turn the section into a flex container */
+    justify-content: space-around; /* Space the child elements evenly horizontally */
+    align-items: center; /* Center-align child elements vertically */
+    color:black;
+    height: 90vh;
+    font-size: large;
+  }
+  
+  .summary {
+    flex: 1; /* Allow the summary div to expand and take available space */
+    padding-left:10%; /* Add spacing around the summary content */
+    font-family: 'Comfortaa', cursive;
+    font-weight: large;
+    display: flex;
+    flex-direction: column;
+    
+  }
+  
+  .image {
+    flex: 2; /* Allow the image div to expand and take available space */
+    text-align: center; /* Center-align the image horizontally */
+  }
+  
+  img {
+    max-width: 100%; /* Ensure the image doesn't exceed its container width */
+    height: auto; /* Maintain the image's aspect ratio */
+  }
+
+  @keyframes fall {
+    from {
+      transform: translateY(-100px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Apply animation to the .name element */
+  .name {
+    height: 20vh;
+    animation: fall 1s ease-out; /* Use the "fall" animation */
+    animation-delay: 0.5s; /* Delay the animation by 0.5 seconds */
+  }
+
+  @media screen and (max-width: 768px) {
+    .about--section {
+      margin-top: 15%;
+      flex-direction: column; /* Stack elements vertically for tablet view */
+      height: auto; /* Adjust height as needed */
+    }
+  
+    .summary {
+      flex: none; /* Reset flex property for summary to take its natural width */
+      padding: 10px; /* Adjust padding */
+      text-align: center; /* Center-align text */
+      font-weight: bolder;
+    }
+  
+    .image {
+      flex: none; /* Reset flex property for image to take its natural width */
+    }
+  }
+  
+  /* Responsive styles for phone view */
+  @media screen and (max-width: 480px) {
+    .summary {
+      padding: 10px; /* Further adjust padding for smaller screens */
+    }
+  }  
