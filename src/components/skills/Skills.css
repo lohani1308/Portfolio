@@ -1,0 +1,16 @@
+.skills--section{
+    display: flex;
+    gap:10%;
+    padding: 5%;
+}
+
+.skills--section > div{
+    height: 20vh;
+    width: 40%;
+    border: 4px solid #ecb0ec;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+

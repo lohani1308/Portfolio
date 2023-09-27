@@ -1,0 +1,25 @@
+.projects{
+    display: flex;
+    flex-direction: column;
+    height: 60vh;
+    width: 100%;
+    padding: 5%;
+    text-align: center;
+    background-color: #ecb0ec;
+    position: relative;
+}
+
+.line {
+    width: 2px; /* Adjust the width to control the thickness of the line */
+    height: 40vh; /* Adjust the height of the line */
+    background-color:purple; /* Adjust the background color as needed */
+    position: absolute;
+    top: 51%; /* Adjust the vertical position of the line */
+    left: 5%; /* Adjust the horizontal position of the line */
+    transform: translate(-50%, -50%) rotate(180deg); 
+}
+
+.project--1,.project--2{
+    padding-left: 4% ;
+}
+

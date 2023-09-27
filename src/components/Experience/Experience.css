@@ -1,29 +1,28 @@
 .experience{
     display: flex;
-    height: 60vh;
+    height: 70vh;
     width: 100%;
-    padding-left: 10%;
     flex-direction: column;
-    background-color: #c981c9;
-    padding: 5%;
-    color:white;
+    background-color: #ecb0ec;
+    padding: 8%;
+    color:black;
     text-align: center;
     position: relative;
 }
 
 .line {
     width: 2px; /* Adjust the width to control the thickness of the line */
-    height: 40vh; /* Adjust the height of the line */
-    background-color:white; /* Adjust the background color as needed */
+    height: 60vh; /* Adjust the height of the line */
+    background-color:purple; /* Adjust the background color as needed */
     position: absolute;
-    top: 62%; /* Adjust the vertical position of the line */
+    top: 51%; /* Adjust the vertical position of the line */
     left: 5%; /* Adjust the horizontal position of the line */
     transform: translate(-50%, -50%) rotate(180deg); 
   }
 
 .experience--section{
     margin-top: 2%;
-    width: 90%;
+    width: 100%;
     font-weight: bolder;
 }
 
@@ -34,13 +33,13 @@
 
 @media screen and (max-width: 768px){
     .experience{
-        height: 90vh;
+        height: 70vh;
     }
 
     .line {
         width: 2px; /* Adjust the width to control the thickness of the line */
         height: 60vh; /* Adjust the height of the line */
-        background-color:white; /* Adjust the background color as needed */
+        background-color:black; /* Adjust the background color as needed */
         position: absolute;
         top: 43%; /* Adjust the vertical position of the line */
         left: 5%; /* Adjust the horizontal position of the line */

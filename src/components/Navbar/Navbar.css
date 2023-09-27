@@ -5,6 +5,7 @@ nav {
     align-items: center; /* Center-align items vertically */
     padding:0 10%; /* Add some padding for spacing */
     height: 10vh; /* Set the height of the navigation bar */
+    background-color: #ecb0ec;
   }
   
   /* Style the <ul> list within the navigation */

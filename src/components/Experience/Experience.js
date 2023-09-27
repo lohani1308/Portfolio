@@ -20,7 +20,7 @@ function Experience() {
             </li>
             <br/>
             <li>
-                Attained a significant 40% reduction in loading time and an impressiv 20% increase in user
+                Attained a significant 40% reduction in loading time and an impressive 20% increase in user
                 retention time.
             </li>
             <br/>
