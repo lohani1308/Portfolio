@@ -111,14 +111,14 @@ nav {
     .hamburger {
       display: block;
       position: fixed;
-      left:20rem;
+      right:2rem;
       top: 1rem;
       cursor: pointer;
   }
 
-  .hamburger.active .bar:nth-child(2) {
-      opacity: 0;
-    }
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+      }
 
     .hamburger.active .bar:nth-child(1) {
       transform: translateY(8px) rotate(45deg);

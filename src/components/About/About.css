@@ -62,6 +62,9 @@
     .image {
       flex: none; /* Reset flex property for image to take its natural width */
     }
+    .about--summary{
+      margin-top: -100px;
+    }
   }
   
   /* Responsive styles for phone view */
